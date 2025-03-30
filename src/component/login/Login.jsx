@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { createUserWithEmailAndPassword , signInWithEmailAndPassword} from "firebase/auth";
 import { auth , db } from '../../libary/Firebase';
 import{doc, setDoc} from 'firebase/firestore';
+import avatar from "../../../public/avatar.png";
 
 function Login() {
 
@@ -81,7 +82,7 @@ function Login() {
      <h2>Create Your Account First</h2>
      <form onSubmit={handelregister}>
      <label htmlFor="file">
-     <img src={avater.url || "./avatar.png"} alt="" />
+     <img src={avater.url || avatar} alt="" />
      upload picture</label>
      <input type="file" id='file' style={{display:'none'}} onChange={handelavater}/>
      <input type="text" placeholder='username' name='Username'/>
