@@ -1,0 +1,96 @@
+.details{
+    flex: 1;
+    overflow-y: scroll;
+    .user{
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 1px solid #dddddd35;
+
+    img{
+       width: 70px;
+       height: 70px;
+       border-radius: 50%;
+       object-fit: cover;
+    }
+    }
+    .info{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    .option{
+
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        span{
+            font-size: 14px;
+        }
+
+        img{
+            width: 30px;
+            height: 30px;
+            background-color: rgba(17,25,40,0.3);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        }
+        .photos{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        .photoItem{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           
+          .photoDetail{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+         span{
+            font-size: 10px;
+         }
+           
+          }
+          img{
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        }
+    }
+    button{
+        padding: 10px 20px;
+        background-color: brown;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+   
+    }
+      button:hover{
+        background-color: rgb(202, 54, 54);
+        transition: 0.5s;
+      }
+      .logout{
+        background-color: rgb(80, 80, 237);
+        &:hover{
+            background-color: rgb(20, 20, 188);
+        }
+      }
+    }
+}
